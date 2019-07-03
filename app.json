@@ -1,0 +1,59 @@
+{
+  "expo": {
+    "name": "demoapp",
+    "slug": "AwesomeProject",
+    "privacy": "public",
+    "facebookScheme":"fb1048642325331666",
+    "sdkVersion": "33.0.0",
+    "scheme": "mychat",
+    "platforms": [
+      "ios",
+      "android"
+    ],
+    "version": "2.0.1",
+     "android": {
+      "package": "com.ShareJoy.demoapp",
+      "intentFilters": [
+        {
+          "action": "VIEW",
+          "data": [
+            {
+              "scheme": "https",
+              "host": "*.sharejoy.io",
+              "pathPrefix": "/records"
+            }
+          ],
+          "category": [
+            "BROWSABLE",
+            "DEFAULT"
+          ]
+        }
+      ],
+
+      "config":{
+
+        "googleSignIn":{
+
+          "apiKey": "AIzaSyB2PotcmseNc3Y9UduJY1BlkmDgKUjUpQE",
+          "certificateHash": "5C50BC4650977C8523BE3B961C739473D5EE3599"
+        }
+      }
+    },
+    "orientation": "portrait",
+    "icon": "./assets/gift.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "assets/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    }
+  }
+}
